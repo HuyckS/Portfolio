@@ -1,0 +1,310 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.navbar-title1{
+  transition: all 0.3s;
+  font-size: 1.5rem;
+
+
+}
+
+.navbar-title2{
+  transition: all 0.3s;
+  font-size: 1rem;
+
+}
+
+.navbar-title1:hover,
+.navbar-title1:active,
+.navbar-title2:hover,
+.navbar-title2:active{
+  transform:scale(1.1);
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-top: 100px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+/* Home classes
+-------------------------------------------------------- */
+.section-banner {
+  height: 75vh;
+}
+
+.caption {
+  position: relative;
+  left: 0;
+  top: 0;
+  background-color: #495057;
+}
+
+.panel__box {
+  margin: 15px;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+
+.panel__box:hover,
+.panel__box:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.panel__box-1 {
+  background-image: linear-gradient(to right, #38d9a9, #c3fae8);
+}
+
+.panel__box-2 {
+  background-image: linear-gradient(to right, #ffe066, #fff9db);
+}
+
+.panel__box-3 {
+  background-image: linear-gradient(to right, #74c0fc, #e7f5ff);
+}
+
+.profile-pic{
+  border-radius: 3px;
+}
+/* Resume classes
+-------------------------------------------------------- */
+
+.section-resume {
+  border: 1px solid black;
+  padding: 25px;
+}
+.resume__header {
+  text-align: center;
+}
+.resume-category {
+}
+.resume-category__title {
+  border-bottom: 1px solid black;
+}
+
+.resume-block__description {
+  font-size: 18px;
+}
+.resume-block__title-box {
+  width: 100%;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.resume-block__title {
+  font-weight: bold;
+}
+.resume-block__year {
+  font-weight: bold;
+}
+.resume-block__sub-title {
+  font-style: italic;
+}
+
+/* Contact classes
+-------------------------------------------------------- */
+.connect-link {
+  padding: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.connect-link:hover,
+.connect-link:active {
+  transform: scale(1.1);
+}
+
+/* Project classes
+-------------------------------------------------------- */
+.project__description {
+  padding-right: 15px;
+}
+
+.popup-link {
+  text-decoration: none;
+  color: black;
+}
+
+.popup-link:hover,
+.popup-link:active {
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 1.5rem 4rem rgba(black, 0.35);
+  cursor: pointer;
+}
+
+.popup-link__content {
+  transition: all 0.3s;
+  padding: 10px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transition: all 0.04s;
+}
+
+.popup-link__content:hover,
+.popup-link__content:active {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #dee2e6, #f8f9fa);
+  transform: scale(1.04);
+}
+
+.popup1,
+.popup2,
+.popup3,
+.popup4 {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(black, 0.75);
+  z-index: 100;
+  visibility: hidden;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s;
+}
+
+.popup-close {
+  color: black;
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  cursor: pointer;
+  z-index:300;
+}
+
+.popup-close:hover,
+.popup-close:visited {
+  transform: scale(1.1);
+  color: red;
+}
+.popup-content {
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(black, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+  visibility: visible;
+  z-index: 5000;
+}
+
+.project-details__box {
+  padding: 10px;
+}
+
+.project-details__text {
+  padding: 0px 20px;
+}
+
+.feature-group {
+  padding: 5px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+/* Skills classes
+-------------------------------------------------------- */
+.skills__box {
+  opacity: 0.7;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1)
+  transition: 0.4s;
+}
+
+.skills__box:hover,
+.skills__box:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.skills__box-1 {
+  background-image: linear-gradient(to right, #38d9a9, #c3fae8);
+}
+
+.skills__box-2 {
+  background-image: linear-gradient(to right, #ffe066, #fff9db);
+}
+
+.skills__box-3 {
+  background-image: linear-gradient(to right, #74c0fc, #e7f5ff);
+}
+
+.skills__box-4 {
+  background-image: linear-gradient(to right, #e599f7, #f8f0fc);
+}
